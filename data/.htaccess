@@ -1,0 +1,7 @@
+# Voorkom dat stats.json rechtstreeks via de browser gedownload kan worden.
+Require all denied
+
+# Fallback voor oudere Apache-versies (2.2)
+<IfModule !mod_authz_core.c>
+    Deny from all
+</IfModule>
